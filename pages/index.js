@@ -10,6 +10,9 @@ export default function Home() {
           <ProductItem product={product} key={product.slug}></ProductItem>
         ))}
       </div>
+      <div>
+        
+      </div>
     </Layout>
   );
   

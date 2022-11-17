@@ -7,9 +7,10 @@ import data from '../../utils/data';
 import { Store } from '../../utils/Store';
 
 export default function ProductScreen() {
+  const { query } = useRouter();
+
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
-  const { query } = useRouter();
   const { slug } = query;
   const product = data.products.find((x) => x.slug === slug);
   if (!product) {
